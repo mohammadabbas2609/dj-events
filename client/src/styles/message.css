@@ -1,0 +1,17 @@
+.message {
+  width: 50%;
+  height: 40px;
+  padding: 1.5rem;
+  margin: 0.5rem 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.info {
+  background-color: #79d45e;
+}
+
+.danger {
+  background-color: indianred;
+}

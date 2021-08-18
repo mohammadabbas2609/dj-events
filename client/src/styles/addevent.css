@@ -1,0 +1,64 @@
+.add-event h3 {
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.add-event .create-form {
+  display: flex;
+}
+
+.add-event .create-form form {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: 7fr 5fr;
+}
+
+.add-event .create-form form input {
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.add-event .create-form form input:focus {
+  border: 1px solid #111;
+}
+
+.add-event .create-form form textarea {
+  padding: 0.5rem;
+  resize: none;
+  height: 200px;
+  width: 400px;
+}
+
+.add-event .create-form form img {
+  height: 200px;
+  width: 250px;
+  background-size: cover;
+}
+
+@media (max-width: 760px) {
+  .add-event .create-form form {
+    grid-gap: 1rem;
+  }
+
+  .add-event .create-form form input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 670px) {
+  .add-event .create-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .add-event .create-form form {
+    grid-template-columns: 1fr;
+  }
+
+  .add-event h3 {
+    text-align: center;
+  }
+}

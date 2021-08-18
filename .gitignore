@@ -12,6 +12,11 @@ node_modules/
 # production
 /build
 
+#server
+/server/_data
+/server/requests
+/server/seeder.js
+
 # misc
 .env
 .DS_Store

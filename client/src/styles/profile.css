@@ -1,0 +1,81 @@
+.profile-info-container {
+  display: flex;
+  margin-top: 2rem;
+}
+
+.profile-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.profile-container .btn {
+  margin-left: 0.5rem;
+}
+
+.profile-info-container .my-events {
+  flex: 4;
+  margin: 1rem 0;
+}
+
+.profile-container form {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 0.8rem;
+}
+
+.profile-container form div {
+  margin: 1rem 0;
+}
+
+.profile-container form input {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.profile-info-container .my-events .event-info-profile {
+  margin: 1.5rem 0;
+}
+
+.profile-info-container .my-events .event-info-profile h3 {
+  margin: 0.5rem 0;
+}
+
+.profile-info-container .my-events .event-info-profile p {
+  margin: 0.5rem 0;
+}
+
+.profile-info-container .my-events .event-info-profile a {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 700px) {
+  .profile-container {
+    flex: 3;
+  }
+
+  .profile-info-container .my-events {
+    flex: 3;
+  }
+}
+
+@media (max-width: 460px) {
+  .profile-info-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .profile-container {
+    flex: 1;
+  }
+  .profile-info-container .my-events {
+    flex: 1;
+  }
+}
