@@ -108,6 +108,7 @@ export const updateEvent = asyncHandler(async (req, res, next) => {
 
   let upload;
   if (req.body.image) {
+    await imageUpload.uploader.destroy(event.image);
     upload = await imageUpload.uploader.upload(req.body.image, {
       upload_preset: "DJ_EVENTS",
     });

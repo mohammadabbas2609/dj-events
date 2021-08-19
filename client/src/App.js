@@ -23,7 +23,7 @@ function App() {
         <Route path="/events" component={Events} />
         <Route path="/create-event" component={AddEvent} />
         <Route path="/event/:id" component={EventDetail} />
-        <Route path="/updateevent/:id" component={UpdateEvent} />
+        <PrivateRoute path="/updateevent/:id" component={UpdateEvent} />
       </Switch>
     </Router>
   );
