@@ -7,6 +7,7 @@ import { errorHandler, notFound } from "./middlewares/errorHandler.js";
 import UserRouter from "./routes/userRoutes.js";
 import EventRouter from "./routes/eventRoutes.js";
 import cookie from "cookie-parser";
+import path from "path";
 
 const app = express();
 dotenv.config({});
