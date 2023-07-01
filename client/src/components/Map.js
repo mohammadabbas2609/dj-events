@@ -14,7 +14,7 @@ const Map = ({ longitude, latitude }) => {
   useEffect(() => {
     if (map.current) return;
     map.current = new mapboxgl.Map({
-      container: mapContainer.current,
+      container: "map",
       style: "mapbox://styles/mapbox/streets-v11",
       center: [lng, lat],
       zoom,
@@ -31,7 +31,7 @@ const Map = ({ longitude, latitude }) => {
   });
 
   return (
-    <div className="map">
+    <div className="map" id="map">
       <div className="sidebar">
         Longitude: {lng} | Latitude : {lat} | Zoom : {zoom}
       </div>
