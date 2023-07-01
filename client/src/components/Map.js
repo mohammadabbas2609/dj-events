@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import mapboxgl from "mapbox-gl";
 import "mapbox-gl/dist/mapbox-gl.css";
 
-mapboxgl.accessToken = process.env.REACT_APP_MAP_BOX_API;
+mapboxgl.accessToken = "pk.eyJ1IjoibW9oYW1tYWRhYmJhczI2MDkiLCJhIjoiY2tzNXQzYjA5MDUwbDMwb2NiM2x2d3ZvYyJ9.aqHBSpxMDDbM7Z4-vHlv_g";
 
 const Map = ({ longitude, latitude }) => {
   const mapContainer = useRef(null);
